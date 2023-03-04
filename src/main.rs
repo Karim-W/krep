@@ -12,7 +12,7 @@ fn main() {
         let line = line.expect("nothing to read");
         let split: Vec<&str> = line.split(pattern).collect();
         if split.len() > 1 {
-            println!("{}", split.join(&pattern.red().to_string()));
+            println!("{}", split.join(&pattern.red().bold().to_string()));
         } 
     }
 }
